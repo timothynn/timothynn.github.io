@@ -39,8 +39,8 @@
       #302c3f,
       #1d1a27);
   --text-gradient-yellow: linear-gradient(to right,
-      #ff4895,
-      #6e4fe9);
+      #f85a5a,
+      #f18f3e);
 
   /* solid */
 
@@ -51,7 +51,7 @@
   /* sections */
   --eerie-black-2: #1d1a27;
   /* background */
-  --smoky-black: #13111a;
+  --smoky-black: #11111b;
   --default-card: #1d1a27;
   --white-1: #b7b4c7;
   --white-2: #ffffff;
