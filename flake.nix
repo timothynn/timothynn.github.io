@@ -17,8 +17,8 @@
           version = "0.1.0";
           src = ./.;
 
-          nativeBuildInputs = [ pkgs.pnpm pkgs.nodejs-20_x ];
-          buildInputs = [ pkgs.nodejs-20_x ];
+          nativeBuildInputs = [ pkgs.pnpm pkgs.nodejs_24 ];
+          buildInputs = [ pkgs.nodejs_24 ];
 
           # Build with pnpm (use frozen lockfile if present)
           buildPhase = ''
@@ -51,7 +51,7 @@
 
         # Developer shell: node, pnpm and common tools
         devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [ nodejs-20_x pnpm git ripgrep ];
+          buildInputs = with pkgs; [ nodejs_24 pnpm git ripgrep ];
           shellHook = ''
             echo "Dev shell active — run 'pnpm install' then 'pnpm dev' or 'pnpm build'"
           '';
