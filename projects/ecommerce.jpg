@@ -1,0 +1,10 @@
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="400" fill="#f4f4f5"/>
+  <rect x="200" y="100" width="400" height="200" rx="8" fill="#e4e4e7"/>
+  <text x="400" y="210" font-family="Arial" font-size="20" fill="#71717a" text-anchor="middle">
+    Project Screenshot
+  </text>
+  <text x="400" y="240" font-family="Arial" font-size="14" fill="#a1a1aa" text-anchor="middle">
+    Replace with your project image
+  </text>
+</svg>

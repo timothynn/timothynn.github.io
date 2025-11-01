@@ -1,0 +1,10 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="400" fill="#f4f4f5"/>
+  <circle cx="200" cy="200" r="100" fill="#e4e4e7"/>
+  <text x="200" y="320" font-family="Arial" font-size="16" fill="#71717a" text-anchor="middle">
+    Add your photo here
+  </text>
+  <text x="200" y="340" font-family="Arial" font-size="14" fill="#a1a1aa" text-anchor="middle">
+    headshot.jpg (400x400px)
+  </text>
+</svg>
