@@ -1,86 +1,96 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
+"use client";
 
-const socials = [
-  {
-    name: "GitHub",
-    icon: Github,
-    href: "https://github.com/timothynn",
-    username: "@timothynn",
-  },
-  {
-    name: "LinkedIn",
-    icon: Linkedin,
-    href: "https://linkedin.com/in/timothynn",
-    username: "Timothy Nguyen",
-  },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    href: "https://twitter.com/timothynn",
-    username: "@timothynn",
-  },
-  {
-    name: "Email",
-    icon: Mail,
-    href: "mailto:hello@timothynn.com",
-    username: "hello@timothynn.com",
-  },
-];
+import { FormEvent } from "react";
 
 export function Contact() {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const name = formData.get("name") as string;
+    const email = formData.get("email") as string;
+
+    // Show notification
+    alert(
+      `Thank you ${name}! Your message has been sent. I'll contact you at ${email} soon.`
+    );
+
+    // Reset form
+    form.reset();
+  };
+
   return (
-    <section id="contact" className="py-24 px-6 bg-muted/30">
-      <div className="max-w-4xl mx-auto space-y-12">
-        {/* Section Header */}
-        <div className="text-center space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Let&apos;s Connect
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Feel free to reach out for collaborations, opportunities, or just a
-            friendly chat
-          </p>
-        </div>
+    <section id="contact">
+      <div className="container">
+        <h2 className="section-title">Get In Touch</h2>
+        <div className="contact-container">
+          <div className="contact-info">
+            <div className="contact-methods">
+              <div className="contact-method">
+                <div className="contact-icon">
+                  <i className="fas fa-envelope"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Email</h3>
+                  <a href="mailto:timothy@example.com">timothy@example.com</a>
+                </div>
+              </div>
 
-        {/* Social Links */}
-        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
-          {socials.map((social) => {
-            const Icon = social.icon;
-            return (
-              <Button
-                key={social.name}
-                variant="outline"
-                className="h-auto p-6 flex items-center justify-start gap-4 hover:bg-accent hover:scale-105 transition-all"
-                asChild
-              >
-                <a
-                  href={social.href}
-                  target={social.name !== "Email" ? "_blank" : undefined}
-                  rel={
-                    social.name !== "Email" ? "noopener noreferrer" : undefined
-                  }
-                >
-                  <div className="p-2 rounded-full bg-primary/10">
-                    <Icon className="w-5 h-5" />
-                  </div>
-                  <div className="text-left">
-                    <div className="font-semibold">{social.name}</div>
-                    <div className="text-sm text-muted-foreground">
-                      {social.username}
-                    </div>
-                  </div>
-                </a>
-              </Button>
-            );
-          })}
-        </div>
+              <div className="contact-method">
+                <div className="contact-icon">
+                  <i className="fab fa-github"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>GitHub</h3>
+                  <a
+                    href="https://github.com/timothynn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    github.com/timothynn
+                  </a>
+                </div>
+              </div>
 
-        {/* CTA */}
-        <div className="text-center pt-8">
-          <Button size="lg" className="rounded-full px-8" asChild>
-            <a href="mailto:hello@timothynn.com">Send Me an Email</a>
-          </Button>
+              <div className="contact-method">
+                <div className="contact-icon">
+                  <i className="fas fa-map-marker-alt"></i>
+                </div>
+                <div className="contact-details">
+                  <h3>Location</h3>
+                  <p>California, USA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="contact-form">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="subject">Subject</label>
+                <input type="text" id="subject" name="subject" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+
+              <button type="submit" className="submit-btn">
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
