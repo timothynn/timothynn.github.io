@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Timothy Nduati — Engineering systems">
+<defs><pattern id="grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M35 0H0V35" fill="none" stroke="#28453a" stroke-opacity=".45"/></pattern><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#1e3a2e"/><stop offset="1" stop-color="#091311"/></linearGradient></defs>
+<rect width="1200" height="630" fill="#0b1411"/><rect width="1200" height="630" fill="url(#grid)"/>
+<circle cx="1050" cy="490" r="390" fill="url(#g)" opacity=".65"/>
+<g fill="none" stroke="#88d9b0" stroke-opacity=".42" stroke-width="2"><circle cx="1010" cy="300" r="165"/><circle cx="1010" cy="300" r="108"/><path d="M700 295h620M1010 -30v660M895 225l-150 -87M1117 377l160 110"/></g>
+<g fill="#88d9b0"><circle cx="1010" cy="300" r="9"/><circle cx="897" cy="226" r="6"/><circle cx="1120" cy="378" r="6"/></g>
+<text x="76" y="90" fill="#9ce8c4" font-family="monospace" font-size="20" letter-spacing="4">TIMOTHY.N / ENGINEERING SYSTEMS</text>
+<text x="76" y="230" fill="#edf4ee" font-family="Arial,sans-serif" font-size="76" font-weight="700" letter-spacing="-3">Timothy Nduati</text>
+<text x="76" y="319" fill="#edf4ee" font-family="Arial,sans-serif" font-size="43" letter-spacing="-1">Engineering systems where</text>
+<text x="76" y="374" fill="#9ce8c4" font-family="Arial,sans-serif" font-size="43" letter-spacing="-1">software meets the real world.</text>
+<path d="M76 455h590" stroke="#38564a"/><text x="76" y="504" fill="#b7cabe" font-family="monospace" font-size="19" letter-spacing="2">AVIATION · DATA · AI · INFRASTRUCTURE</text>
+<text x="76" y="583" fill="#6e9f86" font-family="monospace" font-size="17" letter-spacing="2">OBSERVE → DESIGN → BUILD → EVOLVE</text>
+</svg>
