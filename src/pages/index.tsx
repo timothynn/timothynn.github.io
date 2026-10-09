@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useState } from "react";
 import {
-  ArrowDown, ArrowRight, ArrowUpRight, Github, Linkedin, Menu, X, Sun, Moon,
-  Plane, Database, Cpu, Terminal, ShieldCheck, Layers3, Workflow, ExternalLink,
+  ArrowDown, ArrowUpRight, Github, Linkedin, Menu, X, Sun, Moon,
+  Plane, Database, Cpu, Terminal, ExternalLink,
 } from "lucide-react";
 
 type Category = "All" | "AI & Aviation" | "Data & Finance" | "Systems";
