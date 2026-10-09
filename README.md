@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Timothy Nduati — Systems Portfolio
 
-## Getting Started
+Source for [timothynn.is-a.dev](https://timothynn.is-a.dev), built with Next.js, React and TypeScript, statically exported for GitHub Pages.
 
-First, run the development server:
+## Identity
 
-```bash
+**Engineering systems where software meets the real world.**
+
+Software engineering across aviation technology, data platforms, financial infrastructure and intelligent tooling.
+
+This is a personal portfolio, not an employer website. It does not represent or disclose proprietary client systems.
+
+## Featured public projects
+
+| Project | Focus |
+| --- | --- |
+| [Nexus](https://github.com/timothynn/Nexus) | AI harness, model-agnostic tools, worktrees and multi-agent orchestration |
+| [Aviation Intelligence](https://github.com/timothynn/aviation-intelligence) | Evidence-grounded aviation AI and document intelligence |
+| [Market Data Infrastructure](https://github.com/timothynn/market-data-infra) | Market-data ingestion, normalization and low-latency distribution |
+| [Warehouse Neuron](https://github.com/timothynn/warehouse-neuron) | Event-driven inventory software |
+| [Trading Pipeline](https://github.com/timothynn/trading-pipeline) | Streaming financial analytics |
+| [NixOS Config Manager](https://github.com/timothynn/nixos-config-manager) | Reproducible developer tooling |
+
+No made-up star counts, testimonials, client names or nonfunctional contact forms are included.
+
+## Design system
+
+- Dark-first graphite and muted emerald, with a manual light toggle.
+- Responsive layout with typography-led sections, an original SVG system diagram, filterable projects, and collapsible personal notes.
+- Accessible navigation, clear focus states and reduced-motion support.
+- Self-hosted SVG social card and favicon; no third-party stats badges or tracking pixels.
+- The personal **Nex Veyron / Nyx** motif is intentionally subtle. Professional identity comes first.
+
+## Local development
+
+Requires Node.js 20.9+ (Node.js 24 recommended).
+
+\`\`\`bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+npm run build
+npx tsc --noEmit
+\`\`\`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Build output lives in \`out/\`. The Next.js config uses \`output: "export"\` for static hosting.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deployment
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The website source lives on the \`master\` branch. A GitHub Pages deployment workflow exists in \`.github/workflows/nextjs.yml\`. A second older deployment workflow also exists; it should be consolidated after confirming the repository's current Pages publishing source to avoid conflicting deployments.
 
-## Learn More
+The actual mapping for \`timothynn.is-a.dev\` is managed separately. Changing site content does not change DNS.
 
-To learn more about Next.js, take a look at the following resources:
+## Updating projects
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit the typed \`projects\` array in \`src/pages/index.tsx\`. Keep each description grounded in the linked repository. Only include public personal projects; do not publish private repositories or customer work.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [GitHub](https://github.com/timothynn)
+- [LinkedIn](https://www.linkedin.com/in/timothynn/)
+- [X](https://x.com/timothynn_)
